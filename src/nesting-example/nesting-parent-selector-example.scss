@@ -1,0 +1,32 @@
+$nav-link-bg-color: #000000;
+$nav-link-color: #FFFFFF;
+$nav-link-hover-bg-color: #333333;
+$nav-link-selected-bg-color: #F05523;
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__link {
+    background-color: $nav-link-bg-color;
+    color: $nav-link-color;
+    padding: 0.5em;
+
+    & + & {
+      margin-left: 0.5em;
+    }
+
+    &:hover {
+      background-color: $nav-link-hover-bg-color;
+    }
+
+    &.is-selected {
+      background-color: $nav-link-selected-bg-color;
+    }
+
+    body.site-code-forums & {
+      font-family: Consolas, monospace;
+    }
+  }
+}
+

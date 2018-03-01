@@ -1,0 +1,27 @@
+$im-a-number: 42;
+$im-also-a-number: 42px;
+$you-can-do-math: $im-a-number + $im-also-a-number;
+
+$color-keyword: green;
+$color-hex: #00FF00;
+$color-rgb: rgb(0, 255, 0);
+
+$booleans-are-cool: true;
+$booleans-are-not-cool: false;
+
+$string-can-have-quotes: 'like this';
+$or-not: imma string too;
+$css-functions-are-treated-as-strings: calc(100% - 2em);
+
+$null-is-a-thing: null;
+
+$lists-can-be-space-delimeted: mario luigi peach toad;
+$or-with-commas: mario, luigi, peach, toad;
+$and-are-accessed-like-this: nth($or-with-commas, 1); // mario
+// 1-based indexes make me (╯°□°）╯︵ ┻━┻
+
+$maps-look-like-this: (
+  key1: value1,
+  key2: value2
+);
+$maps-are-accessed-like-this: map-get($maps-look-like-this, key1);

@@ -1,0 +1,11 @@
+.article {
+  display: flex;
+}
+
+.article__ad-container {
+  width: 300px;
+}
+
+.article__body {
+  width: calc(100% - 300px);
+}

@@ -1,0 +1,13 @@
+$ad-width: 300px;
+
+.article {
+  display: flex;
+
+  &__ad-container {
+    width: $ad-width;
+  }
+
+  &__body {
+    width: calc(100% - #{$ad-width});
+  }
+}

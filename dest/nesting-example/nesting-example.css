@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav .nav__link {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav .nav__link {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,23 @@
+$nav-bg-color: $theme-primary-light !default;
+$nav-color: #FFFFFF !default;
+$nav-hover-bg-color: $theme-primary-lighter !default;
+$nav-selected-bg-color: $theme-primary !default;
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__link {
+    background-color: $nav-bg-color;
+    color: $nav-color;
+
+    &:hover {
+      background-color: $nav-hover-bg-color;
+    }
+
+    &.is-selected {
+      background-color: $nav-selected-bg-color;
+    }
+  }
+}
+

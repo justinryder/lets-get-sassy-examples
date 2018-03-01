@@ -1,0 +1,12 @@
+{
+  "name": "lets-get-sassy-examples",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "gulp sass",
+    "watch": "gulp sass:watch"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

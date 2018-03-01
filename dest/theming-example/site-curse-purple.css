@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  background-color: #a183d3;
+  color: #FFFFFF;
+}
+
+.nav__link:hover {
+  background-color: #ccbce7;
+}
+
+.nav__link.is-selected {
+  background-color: #855EC5;
+}
