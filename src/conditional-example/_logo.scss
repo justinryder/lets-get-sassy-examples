@@ -1,0 +1,12 @@
+.logo img {
+  display: block;
+  width: 157px;
+  height: 90px;
+
+  @if $theme-logo {
+    background-image: $theme-logo;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 157px;
+  }
+}
