@@ -8,19 +8,10 @@
 }
 
 $mario-sprite-image: url(/images/icons/mario-sprite.png);
+$mario-sprite-names: 'mario', 'luigi', 'peach', 'toad';
 
-.icon-sprite-mario {
-  @include icon-sprite(0, $mario-sprite-image);
-}
-
-.icon-sprite-luigi {
-  @include icon-sprite(1, $mario-sprite-image);
-}
-
-.icon-sprite-peach {
-  @include icon-sprite(2, $mario-sprite-image);
-}
-
-.icon-sprite-toad {
-  @include icon-sprite(3, $mario-sprite-image);
+@for $i from 0 to length($mario-sprite-names) {
+  .icon-sprite-#{nth($mario-sprite-names, $i + 1)} {
+    @include icon-sprite($i, $mario-sprite-image);
+  }
 }
