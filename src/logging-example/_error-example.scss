@@ -1,0 +1,5 @@
+@mixin error-example($really-bad-value) {
+  @if $really-bad-value {
+    @error 'You set a REALLY bad value!';
+  }
+}

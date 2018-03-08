@@ -1,0 +1,5 @@
+@mixin warn-example($bad-value) {
+  @if $bad-value {
+    @warn 'You set a bad value!';
+  }
+}

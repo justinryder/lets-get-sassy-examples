@@ -1,0 +1,16 @@
+
+@import 'debug-example';
+@import 'warn-example';
+@import 'error-example';
+
+.debug-example {
+  @include debug-example;
+}
+
+.warn-example {
+  @include warn-example(true);
+}
+
+.error-example {
+  //@include error-example(true);
+}

@@ -1,0 +1,6 @@
+@mixin debug-example {
+  $spacing: 20px;
+  $width: 200px;
+
+  @debug '$spacing + $width' $spacing + $width;
+}

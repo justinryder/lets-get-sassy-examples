@@ -1,0 +1,22 @@
+@function get-sprite-position($sprite-index, $sprite-size: 24px) {
+  @return $sprite-size * $sprite-index;
+}
+
+$sprite-width: 24px;
+$sprite-height: 24px;
+$sprite-image: url(/images/icons/mario-sprite.png);
+$sprite-names: 'mario', 'luigi', 'peach', 'toad';
+
+.icon-sprite {
+  width: $sprite-width;
+  height: $sprite-height;
+  background-image: $sprite-image;
+  background-size: $sprite-width $sprite-height;
+  background-repeat: no-repeat;
+
+  @for $i from 0 to length($sprite-names) {
+    &-#{nth($sprite-names, $i + 1)} {
+      background-position: get-sprite-position($i, $sprite-width) 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@function get-sprite-position($sprite-index, $sprite-size: 24px) {
+  @return $sprite-size * $sprite-index;
+}
+
+@mixin icon-sprite($sprite-index, $sprite-image, $sprite-size: 24px) {
+  width: $sprite-size;
+  height: $sprite-size;
+  background-image: $sprite-image;
+  background-size: $sprite-size $sprite-size;
+  background-repeat: no-repeat;
+  background-position: get-sprite-position($sprite-index, $sprite-size) 0;
+}
+
+
+$mario-sprite-image: url(/images/icons/mario-sprite.png);
+$mario-sprite-names: 'mario', 'luigi', 'peach', 'toad';
+
+@for $i from 0 to length($mario-sprite-names) {
+  .icon-sprite-#{nth($mario-sprite-names, $i + 1)} {
+    @include icon-sprite($i, $mario-sprite-image);
+  }
+}
