@@ -1,5 +1,5 @@
 @function getPlayerColor($player: mario) {
-  @if player == luigi {
+  @if $player == luigi {
     @return green;
   } @else {
     @return red;

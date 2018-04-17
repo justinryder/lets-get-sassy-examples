@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 0.5em;
+}
+
+.nav__link + .nav__link {
+  margin-left: 0.5em;
+}
+
+.nav__link:hover {
+  background-color: #333333;
+}
+
+.nav__link.is-selected {
+  background-color: #F05523;
+}
+
+body.site-code-forums .nav__link {
+  font-family: Consolas, monospace;
+}
